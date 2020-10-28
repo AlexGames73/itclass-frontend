@@ -1,0 +1,50 @@
+$drawerWidth: 280px;
+
+.navbar {
+    flex-shrink: 0;
+}
+
+.drawer {
+    width: $drawerWidth;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.drawerPaper {
+    width: $drawerWidth;
+    text-align: center;
+    padding-top: 80px;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.typography {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.right_menu_closer {
+    position: sticky !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+.left_menu_closer {
+    position: fixed !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.label {
+    flex-grow: 1 !important;
+}
+
+.appbar {
+    z-index: 9999 !important;
+    min-width: 320px;
+    left: 0 !important;
+}

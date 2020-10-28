@@ -1,0 +1,23 @@
+.timetable_page {
+    padding: 0;
+    overflow-x: auto;
+}
+
+@media only screen 
+and (max-width: 600px) {
+    .timetable_table .table_title {
+        text-align: start;
+    }
+
+    .weekdays_table .table_title {
+        text-align: start;
+    }
+
+    .weekend_table .table_title {
+        text-align: start;
+    }
+    
+    .timetable_table .table_cell {
+        font-size: 8pt;
+    }
+}

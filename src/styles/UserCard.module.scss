@@ -1,0 +1,53 @@
+.user_card {
+    height: 100px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+    transition: background-color 1s;
+}
+
+.user_card:hover {
+    background-color: rgba($color: #00ff00, $alpha: 0.2);
+}
+
+.avatar {
+    float: left;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-right: 1rem;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.login {
+    font-size: 16pt;
+}
+
+@media only screen 
+and (max-width : 600px) {
+    .login {
+        font-size: 8pt;
+    }
+
+    .user_card {
+        height: 50px;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .avatar {
+        height: 50px;
+        width: 50px;
+    }
+}
